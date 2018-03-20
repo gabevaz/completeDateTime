@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <!--quando o usuario começar a digitar esta tag permite que o programa faça sugestoes, por ex o usuario digitou são, e aparece sao paulo, sao bernardo, sao caetano etc-->
+                <AutoCompleteTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/actPaises"/>
+
+                <DatePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/dtpNasc"
+                    android:datePickerMode="spinner"
+                    android:calendarViewShown="false"
+                    />
+
+                <TimePicker
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/tmpHoraNasc"
+                    android:timePickerMode="spinner"/>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/salvar"
+                    android:onClick="salvar"/>
+
+
+            </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
